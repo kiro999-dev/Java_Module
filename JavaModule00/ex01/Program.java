@@ -7,22 +7,20 @@ public class Program {
         Scanner scan = new Scanner(System.in);
         try {
             int number = scan.nextInt();
-            if(number <= 1)
-            {
+            if (number <= 1) {
                 System.err.println(("IllegalArgument"));
                 System.exit(-1);
             }
             int count = 0;
             boolean fact = true;
             int i = 2;
-            while (i < Math.sqrt(number)) 
-            {
+            while (i < Math.sqrt(number)) {
                 count++;
                 if (number % i == 0) {
                     count++;
                     fact = false;
                     break;
-                } 
+                }
                 i++;
             }
             System.out.print(fact);
@@ -32,6 +30,6 @@ public class Program {
         } catch (Exception e) {
             System.err.println(("its BIG number"));
         }
-      
+
     }
 }
