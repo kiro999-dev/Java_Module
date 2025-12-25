@@ -3,12 +3,11 @@ public class Program
 {
     public static void main(String[] args)
     {
-        int num = 479598;
+         long  num = 99999999;
         int sum = 0;
-        String x = String.valueOf(num);
-        for(int i =0;i< x.length();i++)
-        {
-            sum += Character.getNumericValue(x.charAt(i));
+        while (num > 0) {
+                sum += num %10;
+                num /= 10; 
         }
        System.out.println(sum);
     }
