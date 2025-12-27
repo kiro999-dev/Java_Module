@@ -2,7 +2,7 @@ package ex00;
 
 public class Program {
     public static void main(String[] args) {
-        // Create users
+       
         User john = new User("John", 1000);
         User mike = new User("Mike", 500);
 
@@ -12,11 +12,9 @@ public class Program {
 
         System.out.println("\n=== Creating Transactions ===");
         
-        // John sends 200 to Mike - Create Debit for John (sender)
+  
         Transaction debitTx = new Transaction(mike, john, "Debit", 200);
         System.out.println(debitTx);
-
-        // John sends 200 to Mike - Create Credit for Mike (recipient)
         Transaction creditTx = new Transaction(mike, john, "Credit", 200);
         System.out.println(creditTx);
 
