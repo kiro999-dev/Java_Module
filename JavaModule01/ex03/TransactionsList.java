@@ -1,0 +1,11 @@
+package ex03;
+
+import java.util.UUID;
+
+import ex00.Transaction;
+
+public interface TransactionsList {
+    public void Add(Transaction data);
+    public void Remove(UUID id);
+    public Transaction[] toArray();
+}

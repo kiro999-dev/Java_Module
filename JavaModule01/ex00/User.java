@@ -34,8 +34,8 @@ public class User {
         return Name;
     }
 
-    public void setName(long balance) {
-        this.balance = balance;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
     @Override
