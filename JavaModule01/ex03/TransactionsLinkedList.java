@@ -2,8 +2,6 @@ package ex03;
 
 import java.util.UUID;
 
-import ex00.Transaction;
-
 public class TransactionsLinkedList implements TransactionsList {
     private class Node {
         private Transaction transaction;
@@ -82,6 +80,7 @@ public class TransactionsLinkedList implements TransactionsList {
         }
         return array;
     }
+
     public void printReverse() {
         Node current = tail;
         while (current != null) {
