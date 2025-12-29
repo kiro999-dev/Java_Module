@@ -27,7 +27,7 @@ public class Transaction {
       this.transaction = transaction;
       this.Identifier = id;
    }
-
+   
    public UUID getIdentifier() {
       return Identifier;
    }
