@@ -1,11 +1,11 @@
 package ex02;
 
 public class Summing implements Runnable{
-    private int start;
-    private int end;
-    private int[] arr;
+    final private int start;
+    final private int end;
+    final private int[] arr;
     private static int sum = 0;
-    private int id;
+    final private int id;
     public Summing(int start,int end ,int []arr,int id)
     {
         this.start = start;

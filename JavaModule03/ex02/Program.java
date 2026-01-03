@@ -14,12 +14,17 @@ public class Program {
 
             Summing task = new Summing(start, end, array, i + 1);
             Thread thread = new Thread(task);
-            thread.run();
+            thread.start();
             start = end + 1;
             if (i == ThreadCount - 2)
                 end = arraySize - 1;
             else
                 end += arraySize / ThreadCount;
+            try {
+                thread.join();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
         }
         Summing task = new Summing(start, end, array, 0);
         System.out.printf("Sum by threads: %d\n", task.Getsum());
