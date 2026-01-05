@@ -2,10 +2,8 @@ package ex03;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-
+import java.util.Scanner; 
 public class Program {
-    // public static void
     public static void main(String[] args) {
         Scanner readData = new Scanner(System.in);
         String line;
